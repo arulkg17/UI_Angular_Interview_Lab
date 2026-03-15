@@ -13,6 +13,8 @@ import { CommonModule } from "@angular/common";
         <button (click)="Add()">Add</button>
     `
 })
+
+
 export class CreateProductComponent{
     name:string='';
     price:number=0;
