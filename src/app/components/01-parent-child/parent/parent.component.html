@@ -1,0 +1,29 @@
+<h2>This is Parent Component to test Parent => Child =>Parent</h2>
+<div>
+  <p>
+    <Label>Enter the Name:</Label>
+    <input type="text" [(ngModel)]="parentValue" placeholder="Enter the Name" />
+  </p>
+</div>
+<hr />
+<p>
+    <strong>Entered Parent Value:</strong>
+    {{parentValue}}
+</p>
+<hr />
+<p>
+    <strong>Received value from Child:</strong>
+    {{receivedMessage}}
+</p>
+<hr />
+<p>
+    <button type="button" (click)="reset()">Reset</button>
+</p>
+<hr />
+<p>
+    <app-child 
+        [message]="parentValue"
+        (sendMessageToParent)="receivedMessageFromChild($event)"
+    ></app-child>
+</p>
+
