@@ -1,0 +1,14 @@
+.create-product {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 8px;
+  padding: 6px;
+}
+
+button {
+  padding: 8px 15px;
+}

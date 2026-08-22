@@ -1,0 +1,16 @@
+<div class="subject-lab">
+    <h2>02A - Subject Lab</h2>
+    <p>Component -> Service -> Subject -> Subscriber</p>
+    <hr />
+    <h3> Send Message</h3>
+    <label>Message</label>
+    <input type="text" [(ngModel)]="message" placeholder="Enter Message" />
+    <button type="button" (click)="sendMessage()">
+        Send Message
+    </button>
+    <hr />
+    <h3>Received Message</h3>
+    <p class="received-message">
+        {{receivedMessage}}
+    </p>
+</div>

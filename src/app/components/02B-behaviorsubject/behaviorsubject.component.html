@@ -1,0 +1,39 @@
+<div class="behavior-lab">
+
+  <h2>02B - BehaviorSubject</h2>
+
+  <p>
+    Component → Service → BehaviorSubject → Subscriber
+  </p>
+
+  <hr />
+
+  <h3>Send Message</h3>
+
+  <label>
+    Message:
+  </label>
+
+  <input
+    type="text"
+    [(ngModel)]="message"
+    placeholder="Enter a message"
+  />
+
+  <button
+    type="button"
+    (click)="sendMessage()">
+
+    Send Message
+
+  </button>
+
+  <hr />
+
+  <h3>Current / Received Message</h3>
+
+  <p class="received-message">
+    {{ receivedMessage }}
+  </p>
+
+</div>

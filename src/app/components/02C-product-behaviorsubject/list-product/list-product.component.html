@@ -1,0 +1,16 @@
+<div class="product-list">
+    <h3>Product List</h3>
+    @if( products.length === 0){
+        <p>No Product available</p>
+    }
+    @for(product of products; track product.id){
+        <div class="product">
+            <strong>
+                {{product.name}}
+            </strong>
+            <strong>
+                {{product.price}}
+            </strong>
+        </div>
+   }
+</div>
